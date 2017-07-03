@@ -1,0 +1,73 @@
+/* Debug */
+.h {
+    display: none;
+}
+.r {
+    background-color: rgba(255,0,0,0.2);
+}
+.g {
+    background-color: rgba(0,255,0,0.2);
+}
+.b {
+    background-color: rgba(0,0,255,0.2);
+}
+.y {
+    background-color: rgba(255,255,0,0.2);
+}
+.m {
+    background-color: rgba(255,0,255,0.2);
+}
+.c {
+    background-color: rgba(0,255,255,0.2);
+}
+.rb {
+    border: 3px solid rgba(255,0,0,0.8);
+}
+.gb {
+    border: 3px solid rgba(0,255,0,0.8);
+}
+.bb {
+    border: 3px solid rgba(0,0,255,0.8);
+}
+.yb {
+    border: 3px solid rgba(255,255,0,0.8);
+}
+.mb {
+    border: 3px solid rgba(255,0,255,0.8);
+}
+.cb {
+    border: 3px solid rgba(0,255,255,0.8);
+}
+
+/* Reset */
+h1 {
+    margin: 0;
+}
+.navbar {
+    margin: 0;
+}
+.jumbotron h1 {
+    text-align: center;
+}
+
+/* Flexbox*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+main {
+    flex: 1;
+}
+footer span{
+    color: white;
+}
+
+/* NEWS */
+.news.row {
+    padding: 0 15px;
+}
+.homepage.row {
+    padding: 0 15px;
+}
