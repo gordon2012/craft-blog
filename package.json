@@ -1,0 +1,23 @@
+{
+  "name": "craft-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --no-notify -p \"localhost/craft-blog\" -f \"craft/templates\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gordon2012/craft-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gordon2012/craft-blog/issues"
+  },
+  "homepage": "https://github.com/gordon2012/craft-blog#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12"
+  }
+}
