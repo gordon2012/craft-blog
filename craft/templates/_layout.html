@@ -13,27 +13,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 	<link rel="home" href="{{ siteUrl }}" />
 
 	{% includeCssFile "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" %}
 	{% includeCssFile "#{siteUrl}/style.css" %}
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
 </head>
 
 <body>
 	<header>
-		<nav class="navbar navbar-inverse navbar-static-top">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-10 col-sm-offset-1 col-md-6  col-md-offset-3">
-						<a href="{{ siteUrl }}" class="navbar-brand">{{ siteName }}</a>
-						<div class="pull-right">
-							<a href="{{ url('news') }}" class="{% if craft.request.firstSegment == 'news' %}active {% endif %} btn btn-default navbar-btn">News</a>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 flex-center" style="min-height: 100px;">
+					<div>
+						<a href="{{ siteUrl }}" class="navbar-brand">Gordon Doskas</a>
+					</div>
+				</div>
+				<div class="col-sm-8 flex-center" style="min-height: 100px;">
+					<div class="">
+						<div class="col-sm-4" style="margin: 30px 0;">
+							<a href="{{ siteUrl }}" class="active btn btn-default btn-block">Blog</a>
+						</div>
+						<div class="col-sm-4" style="margin: 30px 0;">
+							<a href="{{ siteUrl }}" class="active btn btn-default btn-block">Portfolio</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
+		</div>
 	</header>
 
 	<main>
@@ -43,10 +54,10 @@
 		{% endblock %}
 	</main>
 
-	<footer>
-		<nav class="navbar navbar-inverse navbar-static-top">
-			<span>Copyright {{ now.year }} {{ craft.request.serverName | ucfirst }}. All rights reserved  •  Built with <a href="http://craftcms.com">Craft</a></span>
-		</nav>
+	<footer class="flex-center">
+		<div class="text-center">
+			<span>Copyright {{ now.year }} Gordon Doskas. &nbsp; All rights reserved.</span>
+		</div>
 	</footer>
 </body>
 </html>
